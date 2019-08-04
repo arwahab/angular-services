@@ -1,0 +1,12 @@
+[
+    {"id": 1, "name": "Cheeseburger", "spicy": "yes"},
+    {"id": 2, "name": "Beeryaani", "spicy": "yes"},
+    {"id": 3, "name": "Kabob Salad", "spicy": "yes"},
+    {"id": 4, "name": "Lamb Shank Gyro", "spicy": "yes"},
+    {"id": 5, "name": "Falafel", "spicy": "yes"},
+    {"id": 6, "name": "Samosa Platter", "spicy": "yes"},
+    {"id": 7, "name": "Crispy Chilli Fish", "spicy": "yes"},
+    {"id": 8, "name": "Chicken Tikka Pizza", "spicy": "yes"},
+    {"id": 9, "name": "Spicy Philly Cheesesteak", "spicy": "yes"},
+    {"id": 10, "name": "Masala Wings", "spicy": "yes"}
+]

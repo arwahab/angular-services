@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { IFood } from './food';
+import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' 
 })
 export class FoodService {
 
-  constructor() { }
+  private _url: string = "/assets/data/foods.json";
 
-  getFoods(){
-    return [
-      {"id": 1, "name": "Cheeseburger", "spicy": "yes"},
-      {"id": 2, "name": "Beeryaani", "spicy": "yes"},
-      {"id": 3, "name": "Kabob Salad", "spicy": "yes"},
-      {"id": 4, "name": "Lamb Shank Gyro", "spicy": "yes"}
-    ];
+  constructor(private http: HttpClient) { }
 
+  getFoods(): Observable<IFood[]>{
+    return this.http.get<IFood[]>(this._url);
   }
 }
